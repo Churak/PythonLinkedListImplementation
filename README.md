@@ -11,9 +11,9 @@ linked list with the following operations:
 
 Singly Linked List  
     Singly linked lists are a data structure made up of objects called _nodes_.  
-    They contain several pieces of information.  
-      * Data - The object being store
-      * Next Pointer - A pointer which points to the next node in the list.
+    They contain several pieces of information.   
+  * Data - The object being store
+  * Next Pointer - A pointer which points to the next node in the list.
 
 Root node
   * Serves as the starting point for a linked list
