@@ -56,15 +56,3 @@ list = LinkedList()
 size = list.size()  
 list.add('jared')  
 list.remove(0)  
-
- 
-    
-
-
-
-
-## Requirements
-  -
-  -Single Python file that is name 'LinkedList'
-  -Another file that uses the linked list. 
-  -Linked list implementation cannot use an array.
