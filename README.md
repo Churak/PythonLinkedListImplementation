@@ -7,59 +7,54 @@ linked list with the following operations:
   * Size - Determines the size of the linked list structure
   * Get - Returns the value at a given index
 
-**Classes**
-Root node - Serves as a starting point for a linked list
-    Requirement for initialization
+**Theory**  
 
-Operations Required:
-    Add - Add node to the end of the list
-        Requires the data of the new node.
-    Remove - Removes a specified node
-        Removes the object at a given index
-        Requires Index number
-    Size - Determines the size of the linked list
-        No user specfied arguments
-    Get - Returns the value at a given index 
+Singly Linked List  
+    Singly linked lists are a data structure made up of objects called _nodes_.  
+    They contain several pieces of information.  
+      * Data - The object being store
+      * Next Pointer - A pointer which points to the next node in the list.
 
-Classes Needed:
-class Node
-    Data:Object -> Instance Variable
-    Next:Node -> Instance Varaible
+Root node
+  * Serves as the starting point for a linked list
+  * Created on linked list initilization
+  * Used as a reference for all operations
 
-    Construcuter(Object=None)
-        Data <- Object
-        Next = None
 
-class LinkedList
-    RootNode:Node -> IV
+Classes Needed:  
+class Node  
+    Data:Object -> Instance Variable  
+    Next:Node -> Instance Varaible  
 
-    Constructer()
-        rootNode = Node()
+    Construcuter(Object=None)  
+        Data <- Object  
+        Next = None  
 
-    add(Object)
-        create a new node n = newnode(Object)
-        lastNode = Start with root node -> iterate through linkedlist till node.next = null
-        lastNode.next = n
+class LinkedList  
+    RootNode:Node -> IV  
 
-    size()
-        start at root node
-        n=0
-        loop
-            check if next is null -> return n
-            Got to nextnode 
-            n+1
-        endloop
+    Constructer()  
+        rootNode = Node()  
 
-        
+    add(Object)  
+        create a new node n = newnode(Object)  
+        lastNode = Start with root node -> iterate through linkedlist till node.next = null  
+        lastNode.next = n  
 
-        
-         
+    size()  
+        start at root node  
+        n=0  
+        loop  
+            check if next is null -> return n  
+            Got to nextnode  
+            n+1  
+        endloop  
 
-list = LinkedList()
+list = LinkedList()  
 
-size = list.size()
-list.add('jared')
-list.remove(0)
+size = list.size()  
+list.add('jared')  
+list.remove(0)  
 
  
     
