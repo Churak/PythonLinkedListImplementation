@@ -1,6 +1,6 @@
-# PythonLinkedListImplementation
+# Python Linked List Implementation
 
-  This project is an implementation of a linked list data structure. It's a single
+  This project is an implementation of a linked list data structure. It's a singly
 linked list with the following operations:
   * Add - Add a node to the end of the list containing the Object the user input
   * Remove - Removes the node at the user specified index
@@ -21,37 +21,38 @@ Root node
   * Used as a reference for all operations
 
 
-Classes Needed:  
+**Classes**  
 class Node  
-    Data:Object -> Instance Variable  
-    Next:Node -> Instance Varaible  
+  * Data:Object -> Instance Variable  
+  * Next:Node -> Instance Varaible  
 
-    Construcuter(Object=None)  
-        Data <- Object  
-        Next = None  
+  * Construcuter(Object=None)  
+    * Data <- Object  
+    * Next = None  
 
 class LinkedList  
-    RootNode:Node -> IV  
+  * RootNode:Node -> IV  
 
-    Constructer()  
-        rootNode = Node()  
+  * Constructer()  
+    * rootNode = Node()  
 
-    add(Object)  
-        create a new node n = newnode(Object)  
-        lastNode = Start with root node -> iterate through linkedlist till node.next = null  
-        lastNode.next = n  
+  * add(Object)  
+    * create a new node n = newnode(Object)  
+    * lastNode = Start with root node -> iterate through linkedlist till node.next = null  
+    * lastNode.next = n  
 
-    size()  
-        start at root node  
-        n=0  
-        loop  
-            check if next is null -> return n  
-            Got to nextnode  
-            n+1  
-        endloop  
+  * size()  
+    * start at root node  
+    * n=0  
+      * loop  
+        * check if next is null -> return n  
+        * Got to nextnode  
+        * n+1  
+      * endloop  
 
+
+#### Example Usage  
 list = LinkedList()  
-
 size = list.size()  
 list.add('jared')  
 list.remove(0)  
