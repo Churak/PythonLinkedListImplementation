@@ -42,7 +42,7 @@ class LinkedList:
 
         return size
 
-    def remove(self):
+    def remove(self, index):
         # Set the rootNode as reference.
         # PreRemoveNode is set to track the n-1 node in the list. This node will become
         # the new last node in the sequence, so we need to track it so we can wipe it's
@@ -52,7 +52,7 @@ class LinkedList:
         # Checks if the root node has a next pointer, if it doesn't,
         # return that the list is empty
         if PreRemoveNode.Next == None:
-            return
+            return "List is empty!"
 
         # Knowing that that list is not empty, we know that the next node in line
         # is possibly the one getting removed. Set up the remove node to represent tge
@@ -61,12 +61,14 @@ class LinkedList:
 
         # Check if the remove node pointer is empty. It it's not empty, we have a new 
         # set of nodes that are our preremove and remove node, so set them as such.
-        while RemoveNode.Next != None:
-            PreRemoveNode = RemoveNode.Next
+        i = index
+        while i > 0:
+            PreRemoveNode = PreRemoveNode.Next
             RemoveNode = PreRemoveNode.Next
+            i = i - 1 
 
         # Abolish the point in the new last node, effectively removing the last node
-        PreRemoveNode.Next = None
+        PreRemoveNode.Next = RemoveNode.Next
 
         return 
 
