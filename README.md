@@ -10,10 +10,9 @@ linked list with the following operations:
 **Theory**  
 
 Singly Linked List  
-    Singly linked lists are a data structure made up of objects called _nodes_.  
-    They contain several pieces of information.   
-  * Data - The object being store
-  * Next Pointer - A pointer which points to the next node in the list.
+  * Singly linked lists are a data structure made up of objects called _nodes_.  
+    * Data - The object being store
+    * Next Pointer - A pointer which points to the next node in the list.
 
 Root node
   * Serves as the starting point for a linked list
@@ -22,7 +21,7 @@ Root node
 
 
 **Classes**  
-class Node  
+_class Node_  
   * Data:Object -> Instance Variable  
   * Next:Node -> Instance Varaible  
 
@@ -30,7 +29,7 @@ class Node
     * Data <- Object  
     * Next = None  
 
-class LinkedList  
+_class LinkedList_
   * RootNode:Node -> IV  
 
   * Constructer()  
@@ -60,7 +59,7 @@ class LinkedList
         * Once the loop breaks, we're at the end.
         * Set PreRemoveNode.Next to null to remove the last node
 
-  * getNode(index)
+  * get(index)
     * start at the root node
     * If the list isn't currently empty, set GetNode to rootNode.Next
     * For loop with user set index
@@ -73,5 +72,5 @@ class LinkedList
 #### Example Usage  
 list = LinkedList()  
 size = list.size()  
-list.add('jared')  
+list.add("Apples")  
 list.remove(0)  
