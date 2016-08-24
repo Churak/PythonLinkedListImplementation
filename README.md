@@ -68,7 +68,7 @@ class LinkedList
       * Check if the current node is the last in the list, if it is, break and return
     * Endloop
 
-    GetNode is now the desired node, return GetNode.Data
+    * GetNode is now the desired node, return GetNode.Data
 
 #### Example Usage  
 list = LinkedList()  
